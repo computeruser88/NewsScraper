@@ -24,10 +24,10 @@ app.use(express.static("public"));
 mongoose.connect("mongodb://localhost/week18Populater");
 
 app.get("/scrape", function (req, res) {
-    axios.get("http://www.echojs.com/").then(function (response) {
+    axios.get("http://feeds.washingtonpost.com/rss/world").then(function (response) {
         const $ = cheerio.load(response.data);
 
-        $("article h2").each(function (i, element) {
+        $("div .item").each(function (i, element) {
             let result = {};
 
             result.title = $(this)
