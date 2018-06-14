@@ -1,0 +1,11 @@
+body { 
+    font-family: 'Playfair Display', serif;
+}
+.jumbotron {
+    background-image: url("../images/washington-dc.JPG");
+    background-position: 0% 60%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.25em 0.25em 0.25em; 
+}
