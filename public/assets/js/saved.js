@@ -95,7 +95,7 @@ $(document).ready(function () {
 
     const handleArticleNotes = () => {
         const currentArticle = $(this).parents(".panel").data();
-        $.get("/api/notes/" + currentArticle._id).then(function(data) {
+        $.get("/api/notes/" + currentArticle._id).then(function (data) {
             const modalText = [
                 "<div class='container-fluid text-center'>",
                 "<h4>Notes for article: ",
@@ -116,7 +116,7 @@ $(document).ready(function () {
                 _id: currentArticle._id,
                 notes: data || []
             };
-            $(".btn.save").data("article",. noteData);
+            $(".btn.save").data("article",.noteData);
             renderNotesList(noteData);
         });
     }
@@ -129,7 +129,7 @@ $(document).ready(function () {
                 _id: $(this).data("article")._id,
                 noteText: newNote
             };
-            $.post("/api/notes", noteData).then(function() {
+            $.post("/api/notes", noteData).then(function () {
                 bootbox.hideAll();
             });
         }
@@ -140,7 +140,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/api/notes/" + noteToDelete,
             method: "DELETE"
-        }).then(function() {
+        }).then(function () {
             bootbox.hideAll();
         });
     }

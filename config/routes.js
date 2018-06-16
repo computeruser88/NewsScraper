@@ -1,4 +1,3 @@
-const scrape = require("../scripts/scrape");
 const articlesController = require("../controllers/Articles");
 const notesController = require("../controllers/Notes");
 
