@@ -26,7 +26,7 @@ $(document).on("click", "p", function () {
         });
 });
 
-$(document).on("click", "#savenote", function () {
+$(document).on("click", ".note-save", function () {
     var thisId = $(this).attr("data-id");
 
     $.ajax({
