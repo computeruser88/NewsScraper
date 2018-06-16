@@ -1,5 +1,4 @@
 const scrape = require('../scripts/scrape');
-
 const Article = require('../models/Article');
 
 module.exports = {
