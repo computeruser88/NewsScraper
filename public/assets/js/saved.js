@@ -2,7 +2,7 @@ $(document).ready(function () {
     const articleContainer = $(".article-container");
     $(document).on("click", ".btn.delete", handleArticleDelete);
     $(document).on("click", ".btn.notes", handleArticleNotes);
-    $(document).on("click". ".btn.note-save", handleNoteSave);
+    $(document).on("click", ".btn.note-save", handleNoteSave);
     $(document).on("click", ".btn.note-delete", handleNoteDelete);
 
     initializePage();
