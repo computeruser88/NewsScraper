@@ -1,5 +1,7 @@
 const articlesController = require("../controllers/Articles");
 const notesController = require("../controllers/Notes");
+const express = require("express");
+const router = express.Router();
 
 module.exports = function (router) {
     router.get("/", function (req, res) {
