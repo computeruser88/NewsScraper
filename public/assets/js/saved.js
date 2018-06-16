@@ -116,7 +116,7 @@ $(document).ready(function () {
                 _id: currentArticle._id,
                 notes: data || []
             };
-            $(".btn.save").data("article",.noteData);
+            $(".btn.save").data("article", noteData);
             renderNotesList(noteData);
         });
     }
