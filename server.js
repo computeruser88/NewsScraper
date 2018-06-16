@@ -3,16 +3,11 @@ const bodyParser = require("body-parser");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 
-const axios = require("axios");
-const cheerio = require("cheerio");
-
-const db = require("./models");
-
 const PORT = 3000 || process.env.PORT;
 
 const app = express();
 
-var exphbs = require("express-handlebars");
+const exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
