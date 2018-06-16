@@ -105,7 +105,7 @@ $(document).ready(function () {
                 "<ul class='list-group note-container'>",
                 "</ul>",
                 "<textarea placeholder='New note' rows='4' cols='60'></textarea>",
-                "<button class='btn btn-success save'>Save note</button>",
+                "<button class='btn btn-success note-save'>Save note</button>",
                 "</div>"
             ].join("");
             bootbox.dialog({
