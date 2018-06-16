@@ -14,11 +14,11 @@ module.exports = function (router) {
         articlesController.fetch(function(error, docs) {
             if (!docs || docs.insertedCount === 0) {
                 res.json({
-                    message: "No new articles for now.";
+                    message: "No new articles for now."
                 });
             } else {
                 res.json({
-                    message: "Added " + docs.insertedCount + " new articles!";
+                    message: "Added " + docs.insertedCount + " new articles!"
                 });
             }
         });
